@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+.button {
+	margin: 0 auto;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	width: 600px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.button h4 {
+	padding: 13.5px 0 13.5px 0;
+	margin: 0;
+}
+
+.button:hover {
+	cursor: pointer;
+}
