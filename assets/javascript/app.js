@@ -12,18 +12,31 @@ var trivia = {
 		"Where and when does Aimee Semple McPherson's ministry take off?"
 	],
 
-	answerBank: {
-		q0: ["<div class='button' id='ac1' data-answer='n'><h4>Abraham Lincoln</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>Robert E. Lee</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Ulysses S. Grant</h4></div>", "<div class='button' id='ac4' data-answer='y'><h4>Jefferson Davis</h4></div>"],
-		q1: ["<div class='button' id='ac1' data-answer='n'><h4>A wild stallion</h4></div>", "<div class='button' id='ac2' data-answer='y'><h4>A block of cheese</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>A chest of gold</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>An applie pie</h4></div>"],
-		q2: ["<div class='button' id='ac1' data-answer='y'><h4>Bull Moose Party</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>Green Party</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Republican Party</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>Libertarian Party</h4></div>"],
-		q3: ["<div class='button' id='ac1' data-answer='n'><h4>Between 1810-1860</h4></div>", "<div class='button' id='ac2' data-answer='y'><h4>Between 1880-1920</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Between 1940-1970</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>Between 1980-2010</h4></div>"],
-		q4: ["<div class='button' id='ac1' data-answer='n'><h4>Olaudah Equiano</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>Frederick Douglass</h4></div>", "<div class='button' id='ac3' data-answer='y'><h4>W.E.B. DuBois</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>Malcom X</h4></div>"],
-		q5: ["<div class='button' id='ac1' data-answer='n'><h4>Abortion</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>The Civil Rights Movement</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Prayer in schools</h4></div>", "<div class='button' id='ac4' data-answer='y'><h4>Nuclear armament and warfar</h4></div>"],
-		q6: ["<div class='button' id='ac1' data-answer='n'><h4>Henry's position on the imminent Revolution</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>Henry's position on religion and state in Pennsylvania</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Henry's incessant use of his catchphrase, \"Give me liberty, or give me death!\"</h4></div>", "<div class='button' id='ac4' data-answer='y'><h4>Henry's position on religion and state in Virginia</h4></div>"],
-		q7: ["<div class='button' id='ac1' data-answer='y'><h4>Ostrich Parenting</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>Helicopter Parenting</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Intensive Parenting</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>Extensive Parenting</h4></div>"],
-		q8: ["<div class='button' id='ac1' data-answer='n'><h4>Frederick Douglass</h4></div>", "<div class='button' id='ac2' data-answer='y'><h4>George Whitefield</h4></div>", "<div class='button' id='ac3' data-answer='n'><h4>Barack Obama</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>Donald Trump</h4></div>"],
-		q9: ["<div class='button' id='ac1' data-answer='n'><h4>Waco, Texas, early 1900s</h4></div>", "<div class='button' id='ac2' data-answer='n'><h4>Waco, Texas, mid 1900s</h4></div>", "<div class='button id='ac3' data-answer='y'><h4>Los Angeles, California, early 1900s</h4></div>", "<div class='button' id='ac4' data-answer='n'><h4>Los Angeles, California, mid 1900s</h4></div>"]
-	}
+	questionAnswerBank: [
+		"Jefferson Davis",
+		"A block of cheese",
+		"Bull Moose Party",
+		"Between 1880-1920",
+		"W.E.B. DuBois",
+		"Nuclear armament and warfar",
+		"Henry's position on religion and state in Virginia",
+		"Ostrich Parenting",
+		"George Whitefield",
+		"Los Angeles, California, early 1900s"
+	],
+
+	mcBank: [
+		["<h4>Abraham Lincoln</h4>", "<h4>Robert E. Lee</h4>", "<h4>Ulysses S. Grant</h4>", "<h4 data-answer='y'>Jefferson Davis</h4>"],
+		["<h4>A wild stallion</h4>", "<h4 data-answer='y'>A block of cheese</h4>", "<h4>A chest of gold</h4>", "<h4>An applie pie</h4>"],
+		["<h4 data-answer='y'>Bull Moose Party</h4>", "<h4>Green Party</h4>", "<h4>Republican Party</h4>", "<h4>Libertarian Party</h4>"],
+		["<h4>Between 1810-1860</h4>", "<h4 data-answer='y'>Between 1880-1920</h4>", "<h4>Between 1940-1970</h4>", "<h4>Between 1980-2010</h4>"],
+		["<h4>Olaudah Equiano</h4>", "<h4>Frederick Douglass</h4>", "<h4 data-answer='y'>W.E.B. DuBois</h4>", "<h4>Malcom X</h4>"],
+		["<h4>Abortion</h4>", "<h4>The Civil Rights Movement</h4>", "<h4>Prayer in schools</h4>", "<h4 data-answer='y'>Nuclear armament and warfar</h4>"],
+		["<h4>Henry's position on the imminent Revolution</h4>", "<h4>Henry's position on religion and state in Pennsylvania</h4>", "<h4>Henry's incessant use of his catchphrase, \"Give me liberty, or give me death!\"</h4>", "<h4 data-answer='y'>Henry's position on religion and state in Virginia</h4>"],
+		["<h4 data-answer='y'>Ostrich Parenting</h4>", "<h4>Helicopter Parenting</h4>", "<h4>Intensive Parenting</h4>", "<h4>Extensive Parenting</h4>"],
+		["<h4>Frederick Douglass</h4>", "<h4 data-answer='y'>George Whitefield</h4>", "<h4>Barack Obama</h4>", "<h4>Donald Trump</h4>"],
+		["<h4>Waco, Texas, early 1900s</h4>", "<h4>Waco, Texas, mid 1900s</h4>", "<h4 data-answer='y'>Los Angeles, California, early 1900s</h4>", "<h4>Los Angeles, California, mid 1900s</h4>"]
+	]
 };
 
 var correct = 0;
@@ -46,11 +59,12 @@ var intervalId;
 
 $(document).ready(function() {
 	function renderQuestion() {
+		$('#answerContainer').empty();
 		randomNumber = Math.floor(Math.random() * trivia.questionBank.length);
 		randomNumber = randomNumber.toString();
-		console.log(unanswered);
+		console.log(randomNumber);
 
-		if ((randomNumber === usedNumbers[0]) || (randomNumber === usedNumbers[1]) || (randomNumber === usedNumbers[2]) || (randomNumber === usedNumbers[3]) || (randomNumber === usedNumbers[4]) || (randomNumber === usedNumbers[5]) || (randomNumber === usedNumbers[6]) || (randomNumber === usedNumbers[7]) || (randomNumber === usedNumbers[8]) || (randomNumber === usedNumbers[9])) {
+		if (usedNumbers.indexOf(randomNumber) !== -1) {
 			if (usedNumbers.length === 11) {
 				$('#question').html("");
 				$('#answerContainer').html('<h3>That\'s it! To get quizzed again, just click restart below. Here\'s your results:<br>Number Correct: ' + correct + '<br>Number Incorrect: ' + incorrect + '<br>Number Unanswered: ' + unanswered + '</h3>' + '<div class="button" id="restart"><h4>Restart</h4></div>');
@@ -75,97 +89,16 @@ $(document).ready(function() {
 
 			$('#question').html(currentQuestion);
 			
-			if (currentQuestion === trivia.questionBank[0]) {
-				$('#answerContainer').html(trivia.answerBank.q0[0] + trivia.answerBank.q0[1] + trivia.answerBank.q0[2] + trivia.answerBank.q0[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
+			for (var i = 0; i < 4; i++) {
+				var buttonDiv = $('<div class="button">').html(trivia.mcBank[randomNumber][i]);
+				$('#answerContainer').append(buttonDiv);
 			}
 
-			else if (currentQuestion === trivia.questionBank[1]) {
-				$('#answerContainer').html(trivia.answerBank.q1[0] + trivia.answerBank.q1[1] + trivia.answerBank.q1[2] + trivia.answerBank.q1[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
+			timer();
 
-			else if (currentQuestion === trivia.questionBank[2]) {
-				$('#answerContainer').html(trivia.answerBank.q2[0] + trivia.answerBank.q2[1] + trivia.answerBank.q2[2] + trivia.answerBank.q2[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else if (currentQuestion === trivia.questionBank[3]) {
-				$('#answerContainer').html(trivia.answerBank.q3[0] + trivia.answerBank.q3[1] + trivia.answerBank.q3[2] + trivia.answerBank.q3[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else if (currentQuestion === trivia.questionBank[4]) {
-				$('#answerContainer').html(trivia.answerBank.q4[0] + trivia.answerBank.q4[1] + trivia.answerBank.q4[2] + trivia.answerBank.q4[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else if (currentQuestion === trivia.questionBank[5]) {
-				$('#answerContainer').html(trivia.answerBank.q5[0] + trivia.answerBank.q5[1] + trivia.answerBank.q5[2] + trivia.answerBank.q5[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else if (currentQuestion === trivia.questionBank[6]) {
-				$('#answerContainer').html(trivia.answerBank.q6[0] + trivia.answerBank.q6[1] + trivia.answerBank.q6[2] + trivia.answerBank.q6[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else if (currentQuestion === trivia.questionBank[7]) {
-				$('#answerContainer').html(trivia.answerBank.q7[0] + trivia.answerBank.q7[1] + trivia.answerBank.q7[2] + trivia.answerBank.q7[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else if (currentQuestion === trivia.questionBank[8]) {
-				$('#answerContainer').html(trivia.answerBank.q8[0] + trivia.answerBank.q8[1] + trivia.answerBank.q8[2] + trivia.answerBank.q8[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
-
-			else {
-				$('#answerContainer').html(trivia.answerBank.q9[0] + trivia.answerBank.q9[1] + trivia.answerBank.q9[2] + trivia.answerBank.q9[3]);
-				timer();
-				$('#ac1').click(answerChoice1);
-				$('#ac2').click(answerChoice2);
-				$('#ac3').click(answerChoice3);
-				$('#ac4').click(answerChoice4);
-			}
+			$('.button').click(answerChoice);
 		}
-	};
+	}
 
 	function triviaRound() {
 
@@ -182,59 +115,12 @@ $(document).ready(function() {
 			incorrect++;
 			append();
 		}
-	};
+	}
 
 	function append() {
-		if (currentQuestion === trivia.questionBank[0]) {
-			$('#answerContainer').append("<h4>Correct answer: Jefferson Davis</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[1]) {
-			$('#answerContainer').append("<h4>Correct answer: A block of cheese</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[2]) {
-			$('#answerContainer').append("<h4>Correct answer: Bull Moose Party</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[3]) {
-			$('#answerContainer').append("<h4>Correct answer: Between 1880-1920</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[4]) {
-			$('#answerContainer').append("<h4>Correct answer: W.E.B. DuBois</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[5]) {
-			$('#answerContainer').append("<h4>Correct answer: Nuclear armament and warfare</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[6]) {
-			$('#answerContainer').append("<h4>Correct answer: Henry's position on religion and state in Virginia</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[7]) {
-			$('#answerContainer').append("<h4>Correct answer: Ostrich Parenting</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else if (currentQuestion === trivia.questionBank[8]) {
-			$('#answerContainer').append("<h4>Correct answer: George Whitefield</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-
-		else {
-			$('#answerContainer').append("<h4>Correct answer: Los Angeles, California, early 1900s</h4>");
-			setTimeout(renderQuestion, 5000);
-		}
-	};
+		$('#answerContainer').append('<h4> Correct answer: ' + trivia.questionAnswerBank[randomNumber] + '</h4>');
+		setTimeout(renderQuestion, 5000);
+	}
 
 	function timer() {
 		seconds = 30;
@@ -252,32 +138,13 @@ $(document).ready(function() {
 				append();
 			}
 		};
-	};
+	}
 
-	function answerChoice1() {
-		userChoice = $('#ac1').data('answer');
+	function answerChoice() {
+		userChoice = $(this).children().data('answer');
 		console.log(userChoice);
 		triviaRound();
-	};
-
-	function answerChoice2() {
-		userChoice = $('#ac2').data('answer');
-		console.log(userChoice);
-		triviaRound();
-	};
-
-	function answerChoice3() {
-		userChoice = $('#ac3').data('answer');
-		console.log(userChoice);
-		triviaRound();
-	};
-
-	function answerChoice4() {
-		userChoice = $('#ac4').data('answer');
-		console.log(userChoice);
-		triviaRound();
-	};
-
+	}
 
 	$('#start').click(renderQuestion);
 	
