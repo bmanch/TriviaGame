@@ -2,12 +2,70 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	background-image: url(../images/statue.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Source Serif Pro', serif;
+}
+
+#marquee {
+	font-family: 'Great Vibes', cursive;
+	font-size: 50px;
+	padding: 40px 30px 40px 30px;
+	color: #DA4167;
+	background: rgba(255, 255, 255, .9);
+	border: solid;
+	border-color: #083D77;
+	border-radius: 100px;
+	margin-bottom: 40px;
+}
+
+#instructions {
+	padding: 30px 50px 30px 50px;
+	color: #2E4057;
+	background: rgba(255, 255, 255, .9);
+	border: solid;
+	border-color: #DA4167;
+	border-radius: 15px 85px 15px 85px;
+	margin-bottom: 40px;
+}
+
+#timerContainer {
+	padding: 30px 50px 30px 50px;
+	color: #2E4057;
+	background: rgba(255, 255, 255, .9);
+	border: solid;
+	border-color: #DA4167;
+	border-radius: 15px 85px 15px 85px;
+	margin-bottom: 40px;
+}
+
+#triviaContainer {
+	padding: 30px 50px 30px 50px;
+	color: #2E4057;
+	background: rgba(255, 255, 255, .9);
+	border: solid;
+	border-color: #DA4167;
+	border-radius: 85px 15px 85px 15px;
+	margin-bottom: 150px;
+}
+
 .button {
 	margin: 0 auto;
+	color: #F6F8FF;
 	border-style: solid;
-	border-color: black;
-	border-width: 2px;
-	width: 600px;
+	border-color: #2E4057;
+	border-width: 3px;
+	background-color: #DA4167;
+	width: 100%;
 	text-align: center;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -20,4 +78,27 @@
 
 .button:hover {
 	cursor: pointer;
+	border-color: #083D77;
+	background-color: #083D77;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+	color: #2E4057;
+	background: rgba(255, 255, 255, .9);
+	border: solid;
+	border-color: #DA4167;
+	border-width: 2px 0 0 0;
+}
+
+a {
+	color: #2E4057;
+	text-decoration: none;
+}
+
+a:hover {
+	background: #DA4167;
+	color: #F6F8FF;
 }
