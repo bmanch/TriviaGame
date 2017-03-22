@@ -3,7 +3,7 @@ var trivia = {
 		"Who was the much reviled president of the Confederacy during the Civil War?",
 		"What did John Leland of Cheshire, New England, present to President Thomas Jefferson in 1802 (the item weighed over 1,200 pounds!)?",
 		"In the presidential election of 1912, Theodore Roosevelt ran for a third (though not successive) term as the nominee for which party?",
-		"During which time span did the US receive over 20 million immigrants, many of whom were from Central, Eastern, or Southern Europe?",
+		"During which time span did the US receive over 20 million immigrants, most of whom were from Central, Eastern, or Southern Europe?",
 		"Commenting on the end of chattel slavery, who remarked that \"The slave went free; stood a brief moment in the sun; then moved back again toward slavery\"?",
 		"To what does the \"Cult of Domesticity\" refer?",
 		"In December, 1784, Thomas Jefferson wrote a letter to James Madison in which he says the following regarding Patrick Henry, \"While Mr. Henry lives another bad constitution would be formed, and saddled for ever on us. What we have to do I think is devoutly to pray for his death....\" What is it that causes Thomas Jefferson to make this remark concerning Patrick Henry?",
@@ -39,7 +39,16 @@ var trivia = {
 	],
 
 	gifBank: [
-		'<iframe src="//giphy.com/embed/YrfCkiGL8TPZ6" width="453.4177215189874" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-YrfCkiGL8TPZ6">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/nUuP4a5EHPgyI" width="480" height="395.84852734922856" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-nUuP4a5EHPgyI">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/k0Pc2xlHv8NBS" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/satisfying-cheese-block-k0Pc2xlHv8NBS">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/XWgrg7WHmZ7jO" width="480" height="377.6842105263158" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/drinking-deer-XWgrg7WHmZ7jO">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/Z5J1WBEWcLQru" width="480" height="268.8" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/broad-city-illana-glazer-gifs-Z5J1WBEWcLQru">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/xihv3LX16qmwU" width="480" height="366.40000000000003" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/history-marching-march-on-washington-xihv3LX16qmwU">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/J3jCFNTuhvkxq" width="480" height="268.92857142857144" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/march-global-theanimation11-J3jCFNTuhvkxq">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/pCoFSf5eKog6I" width="464.12213740458014" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/jefferson-pCoFSf5eKog6I">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/9vPUAj19eyYvu" width="480" height="372.2448979591837" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/film-documentary-integration-report-9vPUAj19eyYvu">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/CXF2aB8GdqDxC" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/vintage3d-vintage-3d-utah-CXF2aB8GdqDxC">via GIPHY</a></p>',
+		'<iframe src="http://giphy.com/embed/vKtlO3gDGQ2dO" width="480" height="232.93765586034914" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-vKtlO3gDGQ2dO">via GIPHY</a></p>'
 	]
 };
 
@@ -66,16 +75,16 @@ $(document).ready(function() {
 		$('#answerContainer').empty();
 		randomNumber = Math.floor(Math.random() * trivia.questionBank.length);
 		randomNumber = randomNumber.toString();
-		console.log(randomNumber);
 
 		if (usedNumbers.indexOf(randomNumber) !== -1) {
 			if (usedNumbers.length === 11) {
 				$('#question').html("");
-				$('#answerContainer').html('<h3>That\'s it! To get quizzed again, just click restart below. Here\'s your results:<br>Number Correct: ' + correct + '<br>Number Incorrect: ' + incorrect + '<br>Number Unanswered: ' + unanswered + '</h3>' + '<div class="button" id="restart"><h4>Restart</h4></div>');
+				$('#answerContainer').html('<h3>That\'s it! To get quizzed again, just click restart below. Here are your results:<br>Number Correct: ' + correct + '<br>Number Incorrect: ' + incorrect + '<br>Number Unanswered: ' + unanswered + '</h3>' + '<div class="button" id="restart"><h4>Restart</h4></div>');
 				correct = 0;
 				incorrect = 0;
 				unanswered = 0;
 				usedNumbers = [];
+				$('#timer').empty();
 				$('#restart').click(renderQuestion);
 			}
 
@@ -86,10 +95,8 @@ $(document).ready(function() {
 
 		else {
 			currentQuestion = trivia.questionBank[randomNumber];
-			console.log(currentQuestion);
 			usedNumbers += randomNumber + ",";
 			usedNumbers = usedNumbers.split(",");
-			console.log(usedNumbers);
 
 			$('#question').html(currentQuestion);
 			
@@ -138,7 +145,6 @@ $(document).ready(function() {
 			if (seconds === 0) {
 				clearInterval(intervalId);
 				unanswered++;
-				console.log(unanswered);
 				$('#answerContainer').html("<h2>Sorry, you\'ve run out of time!</h2>");
 				append();
 			}
@@ -147,7 +153,6 @@ $(document).ready(function() {
 
 	function answerChoice() {
 		userChoice = $(this).children().data('answer');
-		console.log(userChoice);
 		triviaRound();
 	}
 
