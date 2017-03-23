@@ -39,16 +39,16 @@ var trivia = {
 	],
 
 	gifBank: [
-		'<iframe src="http://giphy.com/embed/nUuP4a5EHPgyI" width="480" height="395.84852734922856" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-nUuP4a5EHPgyI">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/k0Pc2xlHv8NBS" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/satisfying-cheese-block-k0Pc2xlHv8NBS">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/XWgrg7WHmZ7jO" width="480" height="377.6842105263158" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/drinking-deer-XWgrg7WHmZ7jO">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/Z5J1WBEWcLQru" width="480" height="268.8" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/broad-city-illana-glazer-gifs-Z5J1WBEWcLQru">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/xihv3LX16qmwU" width="480" height="366.40000000000003" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/history-marching-march-on-washington-xihv3LX16qmwU">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/J3jCFNTuhvkxq" width="480" height="268.92857142857144" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/march-global-theanimation11-J3jCFNTuhvkxq">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/pCoFSf5eKog6I" width="464.12213740458014" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/jefferson-pCoFSf5eKog6I">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/9vPUAj19eyYvu" width="480" height="372.2448979591837" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/film-documentary-integration-report-9vPUAj19eyYvu">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/CXF2aB8GdqDxC" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/vintage3d-vintage-3d-utah-CXF2aB8GdqDxC">via GIPHY</a></p>',
-		'<iframe src="http://giphy.com/embed/vKtlO3gDGQ2dO" width="480" height="232.93765586034914" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-vKtlO3gDGQ2dO">via GIPHY</a></p>'
+		'<iframe src="https://giphy.com/embed/nUuP4a5EHPgyI" width="480" height="395.84852734922856" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-nUuP4a5EHPgyI">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/k0Pc2xlHv8NBS" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/satisfying-cheese-block-k0Pc2xlHv8NBS">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/XWgrg7WHmZ7jO" width="480" height="377.6842105263158" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/drinking-deer-XWgrg7WHmZ7jO">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/Z5J1WBEWcLQru" width="480" height="268.8" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/broad-city-illana-glazer-gifs-Z5J1WBEWcLQru">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/xihv3LX16qmwU" width="480" height="366.40000000000003" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/history-marching-march-on-washington-xihv3LX16qmwU">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/J3jCFNTuhvkxq" width="480" height="268.92857142857144" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/march-global-theanimation11-J3jCFNTuhvkxq">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/pCoFSf5eKog6I" width="464.12213740458014" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/jefferson-pCoFSf5eKog6I">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/9vPUAj19eyYvu" width="480" height="372.2448979591837" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/film-documentary-integration-report-9vPUAj19eyYvu">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/CXF2aB8GdqDxC" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/vintage3d-vintage-3d-utah-CXF2aB8GdqDxC">via GIPHY</a></p>',
+		'<iframe src="https://giphy.com/embed/vKtlO3gDGQ2dO" width="480" height="232.93765586034914" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/civil-war-vKtlO3gDGQ2dO">via GIPHY</a></p>'
 	]
 };
 
